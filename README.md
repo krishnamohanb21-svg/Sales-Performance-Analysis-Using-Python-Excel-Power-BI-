@@ -76,31 +76,42 @@ Impute Manufacturing Price	fillna(median())	Missing values replaced with column 
 6) Units Sold ↔ most variables (0.23–0.33): Surprisingly weak correlation with Sales/Profit — implying revenue is driven more by price and product mix than raw unit volume.
 7) Manufacturing Price: Very weak correlation with almost everything (≈0.00–0.07) — manufacturing cost doesn't vary much with sales performance in this dataset.
 8) Year: Near-zero correlation with all variables — no strong time-based trend captured here (makes sense, since correlation only checks linear year-over-year scaling, not seasonal patterns).
+
 # Create a regression model to predict sales
 <img width="1599" height="1045" alt="image" src="https://github.com/user-attachments/assets/82fadb99-0fa4-4327-99d8-030ea6f57380" />
+
 # Excel Dashboard
 Microsoft Excel is a spreadsheet program developed by Microsoft that allows users to organize, calculate, format, and analyse data in a grid of rows and columns
 <img width="1364" height="963" alt="image" src="https://github.com/user-attachments/assets/5f33623c-1f71-4b39-abdc-03ebbbd15c22" />
+
 # Sales Dataset
 <img width="1744" height="806" alt="image" src="https://github.com/user-attachments/assets/1cbfd550-a2f5-47c1-a986-1eea8085a8f7" />
+
 # Segment Analysis
 <img width="1626" height="906" alt="image" src="https://github.com/user-attachments/assets/1aa37ba7-601d-411f-af93-2df70c2871c1" />
+
 # Country Analysis
 <img width="1510" height="803" alt="image" src="https://github.com/user-attachments/assets/baf49179-89e3-44ac-ad42-4fa7efc2736f" />
+
 # Month Analysis
 <img width="1536" height="766" alt="image" src="https://github.com/user-attachments/assets/650396b4-7662-4eb5-a3eb-9647b836a144" />
+
 # Product Analysis
 <img width="1695" height="781" alt="image" src="https://github.com/user-attachments/assets/fe64abe2-73c2-4045-a20b-1ed68b96bd87" />
+
 # Discount Analysis
 <img width="1608" height="862" alt="image" src="https://github.com/user-attachments/assets/fee20d4f-d540-4a49-96df-9020b46b9332" />
+
 # Power BI Dashboard
 An interactive dashboard with slicers (Year, Month, Product) and drill-through visuals, built on DAX measures 
 <img width="1757" height="943" alt="image" src="https://github.com/user-attachments/assets/f137e3e8-4d5d-4e03-b5bb-48e041da8a03" />
+
 # Table View
 <img width="1631" height="645" alt="image" src="https://github.com/user-attachments/assets/26708946-9405-421b-a4b1-1686b38f8682" />
 <img width="247" height="942" alt="image" src="https://github.com/user-attachments/assets/96bf95a1-196a-4296-afaa-9457076c114f" />
 <img width="230" height="945" alt="image" src="https://github.com/user-attachments/assets/0a86c51a-2654-47a3-9e5f-b0d83f4492ec" />
 <img width="221" height="903" alt="image" src="https://github.com/user-attachments/assets/85f5497a-72c0-4660-a909-2e64bf69e5eb" />
+
 # DAX View 
 Sum of sales = SUM('Sales Dataset'[ Sales])
 <img width="1417" height="655" alt="image" src="https://github.com/user-attachments/assets/988e9391-fa2e-4d9d-9438-9a6dee8d466a" />
@@ -115,7 +126,9 @@ Total Discount = SUM('Sales Dataset'[Discounts])
 Profit Margin % = [Sum of Profit]/[Sum of sales]*100
 <img width="1607" height="791" alt="image" src="https://github.com/user-attachments/assets/3d15994d-ab10-4ea7-864c-ec26d5389f9d" />
 # Summary of Findings and Recommendations
+
 # Summary of Findings 
 The analysis reveals some significant differences in terms of sales and profits by product, year, country, and customer segment. Certain products contribute much more towards total sales and profit than others. Units sold are shown to have an important relationship with sales, although there may be impacts from discounts affecting profit margins. Analysis at a year- and month-wise level allows us to see periods of increased sales performance.
+
 # Recommendations
 High performing products/customer segments should focus efforts upon to increase sales & profitability as required. It would seem prudent to monitor levels of discounting in order to prevent unwarranted reductions in profit margins. It will be necessary to analyze low performing products and regions in search of avenues of improvements. Sales Trends could assist planning for inventories and marketing activities and sales strategy's for high demand times.
