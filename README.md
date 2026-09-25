@@ -46,26 +46,27 @@ Impute Sale Price	fillna(mean())	Missing values replaced with column mean
 Impute Manufacturing Price	fillna(median())	Missing values replaced with column median
 # Exploratory Data Analysis & Visualizations
 1) Which segment has the highest sales?
-<img width="1090" height="862" alt="image" src="https://github.com/user-attachments/assets/8c6411b2-4de3-4956-bf36-54a837154b12" />
+<img width="1090" height="862" alt="image" src="https://github.com/user-attachments/assets/e1cc9ead-fbe5-424d-982c-b9f28e5159cb" />
 2) Which country has the lowest sales?
-<img width="1006" height="847" alt="image" src="https://github.com/user-attachments/assets/b2befa7f-1cec-4b93-b9e5-481258c43150" />
+<img width="1006" height="847" alt="image" src="https://github.com/user-attachments/assets/3eb4f1f3-958e-4322-8dac-be0985c26282" />
 3) Which Product has the Highest Sales ?
-<img width="963" height="761" alt="image" src="https://github.com/user-attachments/assets/edfb6b3c-6729-4667-a72a-3d17b4fc8d07" />
+<img width="963" height="761" alt="image" src="https://github.com/user-attachments/assets/8a383e39-8726-4422-9118-7d53ec2f1f5a" />
 4) Which product has highest in the profit ?
- <img width="1019" height="786" alt="image" src="https://github.com/user-attachments/assets/6e3dd18e-bb12-4a31-bf0f-f376a2ac9c8e" />
+ <img width="1019" height="786" alt="image" src="https://github.com/user-attachments/assets/43c32f34-9e42-47a3-b94d-baa882d8b294" />
 5) Which Year has highest in the Sales ?
-<img width="1148" height="753" alt="image" src="https://github.com/user-attachments/assets/e1358c79-381f-4836-8198-855b2d25137c" />
+<img width="1148" height="753" alt="image" src="https://github.com/user-attachments/assets/ef21bc1e-9004-48a5-a155-0f9a31e764c2" />
 6) Which product has the highest units sold?
-<img width="1043" height="823" alt="image" src="https://github.com/user-attachments/assets/8f18e9ed-2a94-4c1f-9fe6-7919e8cdcd6f" />
+<img width="1043" height="823" alt="image" src="https://github.com/user-attachments/assets/37f3c5c1-2a9c-4a2a-878e-0157fc670cfe" />
 7) What are the major sales and profit trends in the dataset?
-<img width="1007" height="831" alt="image" src="https://github.com/user-attachments/assets/52b99154-871d-483e-afda-2930b95ec25a" />
-<img width="1632" height="521" alt="image" src="https://github.com/user-attachments/assets/c361dd20-5130-4a33-a3d5-d456bf7c2e7f" />
+<img width="1007" height="831" alt="image" src="https://github.com/user-attachments/assets/34d76804-01f2-4915-92ce-d7f43730e98d" />
+<img width="1632" height="521" alt="image" src="https://github.com/user-attachments/assets/43100fb1-f459-48cf-bb07-022a80cabff6" />
 8) Are there any outliers in Sales, Profit, or Units Sold?
-<img width="1743" height="712" alt="image" src="https://github.com/user-attachments/assets/f6ac2da7-2f06-4371-a33d-d794e09b2c93" />
-<img width="1979" height="598" alt="image" src="https://github.com/user-attachments/assets/63e38db4-a243-4f29-8fa7-d2859191b3c3" />
-<img width="2000" height="500" alt="image" src="https://github.com/user-attachments/assets/aebde375-3b57-4722-b657-59db9b05cade" />
+<img width="1743" height="712" alt="image" src="https://github.com/user-attachments/assets/408c53b3-2732-48d8-bdd8-264cefcfc696" />
+<img width="1979" height="598" alt="image" src="https://github.com/user-attachments/assets/303a12f4-4617-47f2-865d-a042195791b3" />
+<img width="2000" height="500" alt="image" src="https://github.com/user-attachments/assets/5a713baa-5d0c-40c1-b754-c8f7e403a867" />
 9) What is the correlation between Units Sold, Sales, COGS, and Profit?
-<img width="855" height="879" alt="image" src="https://github.com/user-attachments/assets/58b597f3-bba2-4680-8a56-10825e742ed3" />
+<img width="855" height="879" alt="image" src="https://github.com/user-attachments/assets/fcf1b9b4-9baa-489b-85b9-d556424c5e01" />
+# Explanation of Heatmap 
 1) Gross Sales ↔ Sales ↔ COGS (≈0.99–1.00): Near-perfect correlation — expected, since Sales is derived from Gross Sales minus Discounts, and COGS scales directly with sales volume.
 2) Gross Sales/Sales ↔ Profit (0.78–0.81): Strong positive relationship — higher sales generally drive higher profit, though not perfectly, since discounts and costs eat into margins.
 3) Discounts ↔ Gross Sales/Sales (0.74–0.78): Higher discounts are associated with higher gross sales — likely because discounts are applied more on large-volume deals, not that discounting causes more sales.
@@ -75,41 +76,43 @@ Impute Manufacturing Price	fillna(median())	Missing values replaced with column 
 7) Manufacturing Price: Very weak correlation with almost everything (≈0.00–0.07) — manufacturing cost doesn't vary much with sales performance in this dataset.
 8) Year: Near-zero correlation with all variables — no strong time-based trend captured here (makes sense, since correlation only checks linear year-over-year scaling, not seasonal patterns).
 # Create a regression model to predict sales
-<img width="1599" height="1045" alt="image" src="https://github.com/user-attachments/assets/ea4d46f3-164c-473d-a2e7-4317e9ec9b5a" />
+<img width="1599" height="1045" alt="image" src="https://github.com/user-attachments/assets/82fadb99-0fa4-4327-99d8-030ea6f57380" />
 # Excel Dashboard
 Microsoft Excel is a spreadsheet program developed by Microsoft that allows users to organize, calculate, format, and analyse data in a grid of rows and columns
-<img width="1364" height="963" alt="image" src="https://github.com/user-attachments/assets/ee2441d7-767e-46af-9e58-72e6e7df4a9a" />
+<img width="1364" height="963" alt="image" src="https://github.com/user-attachments/assets/5f33623c-1f71-4b39-abdc-03ebbbd15c22" />
 # Sales Dataset
-<img width="1744" height="806" alt="image" src="https://github.com/user-attachments/assets/dffb2c38-80d3-42bc-92fa-9ffcc69d71b9" />
+<img width="1744" height="806" alt="image" src="https://github.com/user-attachments/assets/1cbfd550-a2f5-47c1-a986-1eea8085a8f7" />
 # Segment Analysis
-<img width="1626" height="906" alt="image" src="https://github.com/user-attachments/assets/a20f833d-c686-4d47-843d-be62b08b618f" />
+<img width="1626" height="906" alt="image" src="https://github.com/user-attachments/assets/1aa37ba7-601d-411f-af93-2df70c2871c1" />
 # Country Analysis
-<img width="1510" height="803" alt="image" src="https://github.com/user-attachments/assets/f2a8d972-5381-42ae-aeeb-9aca6b389520" />
+<img width="1510" height="803" alt="image" src="https://github.com/user-attachments/assets/baf49179-89e3-44ac-ad42-4fa7efc2736f" />
 # Month Analysis
-<img width="1536" height="766" alt="image" src="https://github.com/user-attachments/assets/09a503cd-55e5-457a-966b-462ab9fed604" />
+<img width="1536" height="766" alt="image" src="https://github.com/user-attachments/assets/650396b4-7662-4eb5-a3eb-9647b836a144" />
+# Product Analysis
+<img width="1695" height="781" alt="image" src="https://github.com/user-attachments/assets/fe64abe2-73c2-4045-a20b-1ed68b96bd87" />
 # Discount Analysis
-<img width="1608" height="862" alt="image" src="https://github.com/user-attachments/assets/6eb4ce1f-9de0-4db5-a943-179529c7cb5d" />
-Power BI Dashboard
+<img width="1608" height="862" alt="image" src="https://github.com/user-attachments/assets/fee20d4f-d540-4a49-96df-9020b46b9332" />
+# Power BI Dashboard
 An interactive dashboard with slicers (Year, Month, Product) and drill-through visuals, built on DAX measures 
-<img width="1757" height="943" alt="image" src="https://github.com/user-attachments/assets/fd3dacc4-c139-4e21-a134-e49db70ada80" />
+<img width="1757" height="943" alt="image" src="https://github.com/user-attachments/assets/f137e3e8-4d5d-4e03-b5bb-48e041da8a03" />
 # Table View
-<img width="1631" height="645" alt="image" src="https://github.com/user-attachments/assets/5815cbec-d755-4ae1-9aef-744945a65d01" />
-<img width="247" height="942" alt="image" src="https://github.com/user-attachments/assets/00ca8086-4cdb-4bd2-8223-be36aaf1600b" />
-<img width="230" height="945" alt="image" src="https://github.com/user-attachments/assets/a58d3603-d083-43b5-862b-5a82dd04362f" />
-<img width="221" height="903" alt="image" src="https://github.com/user-attachments/assets/db41a928-10b7-4545-97df-6501d6c05d7b" />
+<img width="1631" height="645" alt="image" src="https://github.com/user-attachments/assets/26708946-9405-421b-a4b1-1686b38f8682" />
+<img width="247" height="942" alt="image" src="https://github.com/user-attachments/assets/96bf95a1-196a-4296-afaa-9457076c114f" />
+<img width="230" height="945" alt="image" src="https://github.com/user-attachments/assets/0a86c51a-2654-47a3-9e5f-b0d83f4492ec" />
+<img width="221" height="903" alt="image" src="https://github.com/user-attachments/assets/85f5497a-72c0-4660-a909-2e64bf69e5eb" />
 # DAX View 
 Sum of sales = SUM('Sales Dataset'[ Sales])
-<img width="1417" height="655" alt="image" src="https://github.com/user-attachments/assets/4c82fbc7-666a-42f7-85c4-f063e4891ad1" />
+<img width="1417" height="655" alt="image" src="https://github.com/user-attachments/assets/988e9391-fa2e-4d9d-9438-9a6dee8d466a" />
 Sum of Profit = SUM('Sales Dataset'[Profit])
-<img width="1663" height="806" alt="image" src="https://github.com/user-attachments/assets/e558a939-2c8d-4757-85e3-e32d297e8724" />
+<img width="1663" height="806" alt="image" src="https://github.com/user-attachments/assets/71b8df5c-0816-4408-a5ff-21f18483418c" />
 Total no of Units sold = sum('Sales Dataset'[Units Sold])
-<img width="1649" height="800" alt="image" src="https://github.com/user-attachments/assets/c28bfc01-2647-4d3c-828f-bfcfd3eb6ed3" />
+<img width="1649" height="800" alt="image" src="https://github.com/user-attachments/assets/603ff734-34e2-4eae-a0d8-18f70d0236f1" />
 Average Sales = AVERAGE('Sales Dataset'[ Sales])
-<img width="1623" height="791" alt="image" src="https://github.com/user-attachments/assets/33cc1f2d-55b3-4d6f-9c86-70b4269e1eb9" />
+<img width="1623" height="791" alt="image" src="https://github.com/user-attachments/assets/7dced0ca-99a6-44e4-8b8b-16c044dee0f6" />
 Total Discount = SUM('Sales Dataset'[Discounts])
-<img width="1582" height="781" alt="image" src="https://github.com/user-attachments/assets/242755b1-ce26-4d5e-84e0-4aa4786e3241" />
+<img width="1582" height="781" alt="image" src="https://github.com/user-attachments/assets/b74cb42f-6333-44de-943f-517ddfc52331" />
 Profit Margin % = [Sum of Profit]/[Sum of sales]*100
-<img width="1607" height="791" alt="image" src="https://github.com/user-attachments/assets/f5f67090-3288-40f4-9b24-cb43b996041c" />
+<img width="1607" height="791" alt="image" src="https://github.com/user-attachments/assets/3d15994d-ab10-4ea7-864c-ec26d5389f9d" />
 # Summary of Findings and Recommendations
 # Summary of Findings 
 The analysis reveals some significant differences in terms of sales and profits by product, year, country, and customer segment. Certain products contribute much more towards total sales and profit than others. Units sold are shown to have an important relationship with sales, although there may be impacts from discounts affecting profit margins. Analysis at a year- and month-wise level allows us to see periods of increased sales performance.
