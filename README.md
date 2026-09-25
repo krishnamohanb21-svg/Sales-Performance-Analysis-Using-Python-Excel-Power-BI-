@@ -66,6 +66,7 @@ Impute Manufacturing Price	fillna(median())	Missing values replaced with column 
 <img width="2000" height="500" alt="image" src="https://github.com/user-attachments/assets/5a713baa-5d0c-40c1-b754-c8f7e403a867" />
 9) What is the correlation between Units Sold, Sales, COGS, and Profit?
 <img width="855" height="879" alt="image" src="https://github.com/user-attachments/assets/fcf1b9b4-9baa-489b-85b9-d556424c5e01" />
+
 # Explanation of Heatmap 
 1) Gross Sales ↔ Sales ↔ COGS (≈0.99–1.00): Near-perfect correlation — expected, since Sales is derived from Gross Sales minus Discounts, and COGS scales directly with sales volume.
 2) Gross Sales/Sales ↔ Profit (0.78–0.81): Strong positive relationship — higher sales generally drive higher profit, though not perfectly, since discounts and costs eat into margins.
